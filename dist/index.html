@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fanta Vidéo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" crossorigin href="/assets/index-CcfT_TN9.css">
+</head>
+<body>
+  <header>
+    <h1>Fanta Vidéo</h1>
+  </header>
+  <main>
+    <input type="file" id="videoInput" accept="video/*" multiple>
+    <div class="video-player-container">
+      <video id="videoPlayer" controls></video>
+        <div class="video-controls">
+            <div class="progress-bar-container">
+                <input type="range" id="progressBar" value="0" min="0" step="0.01">
+                <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
+            </div>
+            <div class="controls-buttons">
+                <button id="playPause"><i class="fas fa-play"></i></button>
+                <button id="mute"><i class="fas fa-volume-up"></i></button>
+                <button id="fullscreen"><i class="fas fa-expand"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="playlist-container">
+      <h3>Playlist</h3>
+      <ul id="playlist"></ul>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2024 Fanta Vidéo</p>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
